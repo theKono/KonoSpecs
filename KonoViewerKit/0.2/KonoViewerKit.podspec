@@ -104,9 +104,9 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-   s.resources = "KonoViewerKit/**/*.{html,css,js,xib}"
+  s.resource_bundles = { "KonoViewerKit" => "KonoViewerKit/Resource/*"} 
+#s.resources = "KonoViewerKit/**/*.{html,css,js,xib}"
 #s.header_mappings_dir = 'KonoViewerKit/Resource/'
-s.preserve_paths = "KonoViewerKit/Resource/*"
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
