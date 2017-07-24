@@ -80,7 +80,6 @@ Pod::Spec.new do |s|
 #s.source       = { :git => "https://github.com/theKono/ios-KonoViewer.git" }
   s.source       = { :git => "https://github.com/theKono/ios-KonoViewer.git", :branch => "development" }
 
-
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -104,9 +103,9 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resource_bundles = { "KonoViewerKit" => "KonoViewerKit/Resource/*"} 
-#s.resources = "KonoViewerKit/**/*.{html,css,js,xib}"
-#s.header_mappings_dir = 'KonoViewerKit/Resource/'
+  #s.resources = "KonoViewerKit/**/*.{html,css,js,xib}"
+  s.resource_bundles = { "KonoViewerKit" => "KonoViewerKit/Resource/*",
+                         "KonoViewerKitVC" => "KonoViewerKit/**/*.{xib}" } 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
